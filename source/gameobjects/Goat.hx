@@ -26,9 +26,6 @@ class Goat implements Gamepiece extends FlxSprite
 		animation.frameIndex = player;
 		this.player = player;
 
-		scale.x = 2;
-		scale.y = 2;
-
 		teleportMode = true;
 		square.add(this);
 		teleportMode = false;

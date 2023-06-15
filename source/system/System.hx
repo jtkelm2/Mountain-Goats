@@ -44,9 +44,9 @@ class System
 	{
 		players = [
 			0 => Human, // AI(new AIManager(ps, 0, AILab.handcraftScoreAI)),
-			1 => AI(new AIManager(ps, 1, AILab.handcraftScoreAI)),
-			2 => AI(new AIManager(ps, 2, AILab.handcraftScoreAI)),
-			3 => AI(new AIManager(ps, 3, AILab.handcraftScoreAI))
+			1 => AI(new AIManager(ps, AILab.handcraftScoreAI)),
+			2 => AI(new AIManager(ps, AILab.handcraftScoreAI)),
+			3 => AI(new AIManager(ps, AILab.handcraftScoreAI))
 		];
 	}
 

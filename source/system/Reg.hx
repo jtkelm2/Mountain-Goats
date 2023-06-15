@@ -47,7 +47,7 @@ class Reg
 	{
 		SPACING = 9;
 
-		GOAT_SIZE = 30;
+		GOAT_SIZE = 60;
 		SQUARE_SIZE = 100;
 		TOKEN_SIZE = 60;
 		RANK_SIZE = 120;

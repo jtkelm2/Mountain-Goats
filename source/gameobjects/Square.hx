@@ -30,18 +30,17 @@ class Square implements IDObject extends FlxSprite
 		this.mountain = mountain;
 		this.mountainHeight = mountainHeight;
 
-		var localeSpacing = 2 * Reg.SPACING;
+		var localeSpacing = 2;
+		var distBetweenGoats = Reg.SQUARE_SIZE - 2 * localeSpacing - Reg.GOAT_SIZE;
 		switch squareType
 		{
 			case Mountaintop:
-				hasLocale = new GridLocale(x + Reg.SQUARE_SIZE / 2 - Reg.GOAT_SIZE / 2, y + Reg.SQUARE_SIZE / 2 - Reg.GOAT_SIZE / 2, 3 * Reg.GOAT_SIZE, 0, 1,
-					2);
+				hasLocale = new GridLocale(x + Reg.SQUARE_SIZE / 2 - Reg.GOAT_SIZE / 2, y + Reg.SQUARE_SIZE / 2 - Reg.GOAT_SIZE / 2, 1.5 * Reg.GOAT_SIZE, 0,
+					1, 2);
 				initTokens();
 			case Mountain:
-				var distBetweenGoats = Reg.SQUARE_SIZE - 2 * localeSpacing - Reg.GOAT_SIZE;
 				hasLocale = new GridLocale(x + localeSpacing, y + localeSpacing, 2 * distBetweenGoats, 2 * distBetweenGoats, 2, 2);
 			case MountainFoot:
-				var distBetweenGoats = Reg.SQUARE_SIZE - 2 * localeSpacing - Reg.GOAT_SIZE;
 				hasLocale = new GridLocale(x + localeSpacing, y + localeSpacing, 2 * distBetweenGoats, 2 * distBetweenGoats, 2, 2);
 		}
 		loadGraphic("assets/square.png", true, Reg.SQUARE_SIZE, Reg.SQUARE_SIZE);

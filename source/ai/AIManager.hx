@@ -30,13 +30,11 @@ typedef MoveWithWilds =
 class AIManager implements AI
 {
 	private var ps:PlayState;
-	private var playerMe:Int;
 	private var aiRaw:AIRaw;
 
-	public function new(ps:PlayState, playerMe:Int, aiRaw:AIRaw)
+	public function new(ps:PlayState, aiRaw:AIRaw)
 	{
 		this.ps = ps;
-		this.playerMe = playerMe;
 		this.aiRaw = aiRaw;
 	}
 
