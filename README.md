@@ -1,6 +1,6 @@
 # Mountain Goats
 
-My second test project in HaxeFlixel, this is a mostly-complete implementation of the board game [Mountain Goats](https://boardgamegeek.com/boardgame/305985/mountain-goats), together with AI. Go to [http://jtkelm2.github.io/Calculation-Solitaire/](http://jtkelm2.github.io/Mountain-Goats/) to play!
+My second test project in HaxeFlixel, this is a mostly-complete implementation of the board game [Mountain Goats](https://boardgamegeek.com/boardgame/305985/mountain-goats), together with AI. Go to [http://jtkelm2.github.io/Mountain-Goats/](http://jtkelm2.github.io/Mountain-Goats/) to play!
 
 Features missing from what I would otherwise call a *complete* implementation are as follows:
 
