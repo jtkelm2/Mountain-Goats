@@ -13,7 +13,7 @@ Features missing from what I would otherwise call a *complete* implementation ar
 7. Room for far better graphics. AI could only assist me so much in asset creation.
 8. No logic for handling sprite overlaps in the proper 2.5D way.
 
-Documentation of the code is also lacking. I learned many things along the way, and some design choices were more well thought out than others. To elaborate on the organization of things a little:
+Documentation of the code is also lacking. I learned many things along the way, and some design choices were more well thought out than others. To elaborate on the organization of things a little (or maybe just some notes-to-self):
 
 * As much as possible, nothing is left to per-frame updates. The game's logic is handled through a discrete event queue (`System.events`), which is capable of handling scripted events (wrapped in an enum type `EventID`) which can be set to resolve immediately or be placed in the queue. This includes events of input from the player (currently, there is some coupling between inputs and actions incurred by inputs), inputs from the AI, and events produced by the game itself in sequence.
     * The event queue is a global instance, but its handling methods are implemented through the specifics of the current `Gamestate`. These `Gamestate`s act somewhat like more granular `FlxState`s, turning them into finite-state automota.
